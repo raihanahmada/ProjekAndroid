@@ -46,7 +46,8 @@
                 android:layout_height="wrap_content"
                 android:text="WebView"
                 android:backgroundTint="#2d802e"
-                android:id="@+id/btnWebView"/>
+                android:id="@+id/btnWebView"
+                app:icon="@drawable/ic_add"/>
 
             <!-- Text 1 -->
             <TextView
