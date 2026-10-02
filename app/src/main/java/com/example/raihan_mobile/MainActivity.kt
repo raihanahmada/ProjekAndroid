@@ -12,6 +12,7 @@ import com.example.raihan_mobile.databinding.ActivityMainBinding
 import com.example.raihan_mobile.databinding.ActivityThirdtBinding
 import com.example.raihan_mobile.pertemuan3.ThirdResultActivity
 import com.example.raihan_mobile.pertemuan4.FourthActivity
+import com.example.raihan_mobile.pertemuan5.FifthActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -30,6 +31,17 @@ class MainActivity : AppCompatActivity() {
             //Mengambil value dari inputNama dan menampilkan di Logcat
 
             val intent = Intent(this, FourthActivity::class.java)
+            intent.putExtra("name", "Politeknik Caltex Riau")
+            intent.putExtra("from", "Rumbai")
+            intent.putExtra("age", 25)
+
+            startActivity(intent)
+
+        }
+        binding.btnP5.setOnClickListener {
+            //Mengambil value dari inputNama dan menampilkan di Logcat
+
+            val intent = Intent(this, FifthActivity::class.java)
             startActivity(intent)
 
         }
