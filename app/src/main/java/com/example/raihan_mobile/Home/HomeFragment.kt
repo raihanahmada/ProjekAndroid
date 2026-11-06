@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import com.example.raihan_mobile.Home.pertemuan10.TenthActivity
 import com.example.raihan_mobile.Home.pertemuan4.FourthActivity
 import com.example.raihan_mobile.Home.pertemuan5.FifthActivity
 import com.example.raihan_mobile.Home.pertemuan7.SeventhActivity
@@ -55,6 +56,13 @@ class HomeFragment : Fragment() {
             //Mengambil value dari inputNama dan menampilkan di Logcat
 
             val intent = Intent(requireContext(), SeventhActivity::class.java)
+            startActivity(intent)
+
+        }
+        binding.btnToTen.setOnClickListener {
+            //Mengambil value dari inputNama dan menampilkan di Logcat
+
+            val intent = Intent(requireContext(), TenthActivity::class.java)
             startActivity(intent)
 
         }
