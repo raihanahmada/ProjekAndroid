@@ -14,6 +14,18 @@ import java.io.File
 class MessageFragment : Fragment() {
     private var _binding: FragmentMessageBinding? = null
     private val binding get() = _binding!!
+    private val messageList = listOf(
+        MessageModel("joko", "Balikan Yuk !", "https://avatarapi.runflare.run/public/1" ,"10.19"),
+        MessageModel("Raihan", "Yuk", "https://avatarapi.runflare.run/public/2","10.20"),
+        MessageModel("Citra", "Jangan lupa tugasnya ya!", "https://avatarapi.runflare.run/public/3","10.29"),
+        MessageModel("Dika", "Besok kita rapat jam 9", "https://avatarapi.runflare.run/public/4","10.49"),
+        MessageModel("Eka", "Nice job kemarin!", "https://avatarapi.runflare.run/public/5","10.59"),
+        MessageModel("Fajar", "Lagi ngapain?", "https://avatarapi.runflare.run/public/6","11.10"),
+        MessageModel("Gita", "Boleh minta tolong?", "https://avatarapi.runflare.run/public/7","20.19"),
+        MessageModel("Hana", "Lihat email ya", "https://avatarapi.runflare.run/public/8","20.19"),
+        MessageModel("Irfan", "Oke noted", "https://avatarapi.runflare.run/public/9","11.19"),
+        MessageModel("Joko", "Sampai jumpa besok", "https://avatarapi.runflare.run/public/10","10.19")
+    )
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -28,5 +40,7 @@ class MessageFragment : Fragment() {
         (requireActivity() as AppCompatActivity).supportActionBar?.apply {
             title ="Message"
         }
+        val adapter = MessageAdapter(requireContext(), messageList)
+        binding.listMessageItems.adapter = adapter
     }
 }
