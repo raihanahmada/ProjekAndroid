@@ -1,4 +1,4 @@
-package com.example.raihan_mobile.pertemuan4
+package com.example.raihan_mobile.Home.pertemuan4
 
 import android.content.Intent
 import android.os.Bundle
@@ -40,7 +40,7 @@ class FourthActivity : AppCompatActivity() {
         binding.btnShowSnackbar.setOnClickListener {
             Snackbar.make(binding.root, "Ini adalah Snackbar", Snackbar.LENGTH_SHORT)
                 .setAction("tampilkan"){
-                    Log.e("Info Snackbar","Snackbar ditutup")
+                    e("Info Snackbar","Snackbar ditutup")
                 }
                 .show()
         }
@@ -50,11 +50,11 @@ class FourthActivity : AppCompatActivity() {
                 .setMessage("Apakah Anda yakin ingin melanjutkan?")
                 .setPositiveButton("Ya") { dialog, _ ->
                     dialog.dismiss()
-                    Log.e("Info Dialog","Anda memilih Ya!")
+                    e("Info Dialog","Anda memilih Ya!")
                 }
                 .setNegativeButton("Batal") { dialog, _ ->
                     dialog.dismiss()
-                    Log.e("Info Dialog","Anda memilih Tidak!")
+                    e("Info Dialog","Anda memilih Tidak!")
                 }
                 .show()
         }

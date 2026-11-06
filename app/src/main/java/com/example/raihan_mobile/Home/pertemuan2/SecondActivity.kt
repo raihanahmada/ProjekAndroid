@@ -1,4 +1,4 @@
-package com.example.raihan_mobile.pertemuan2
+package com.example.raihan_mobile.Home.pertemuan2
 
 import android.os.Bundle
 import android.util.Log

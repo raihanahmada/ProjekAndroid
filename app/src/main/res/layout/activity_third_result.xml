@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/btn"
     android:padding="24dp"
-    tools:context=".pertemuan3.ThirdResultActivity">
+    tools:context=".Home.pertemuan3.ThirdResultActivity">
 
     <!-- Ikon Ilustrasi Sukses -->
     <ImageView
